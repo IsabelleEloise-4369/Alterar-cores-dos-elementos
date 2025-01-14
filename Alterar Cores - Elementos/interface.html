@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- LINK PARA O CSS -->
+    <link rel="stylesheet" href="/styles/interface.css">
+    
+    <title>Interface WEB Dinâmica</title>
+</head>
+<body>
+
+     <!-- ------------------------------- DIV DO VÍDEO ---------------------------------------- -->
+
+  <!--    <div class="background-video">
+        <video autoplay loop muted poster="your_poster.jpg">
+        <source src="/video.mp4" type="video/mp4">
+        </video>
+    </div>   -->
+
+    <!-- ----------------------------------- TABELA -------------------------------------------- -->
+
+    <header>
+        <h1> GERENCIADOR DE ITENS </h1>
+    </header>
+
+    <main class="container">
+
+        <section class="container__formulario">
+
+            <form class="formulario">
+                <!-- CAMPO PARA QUE O USUÁRIO DIGITE  O ITEM QUE DESEJA -->
+                <label for="item"> Item: </label>
+                <input type="text" id="item" name="item" class="itemCadastro" placeholder="Digite um item para acrescentar na tabela">
+                <p></p>
+                <!-- BOTÃO QUE SERÁ USADO PARA EXECUTAR A FUNÇÃO (ADICIONANDO ITEM NA TABELA) -->
+                <button type="button" class ="adItem"> ADICIONAR </button>
+            </form>
+
+        </section>
+
+        <section class="seletor-cores">
+            <h2>CORES:</h2>
+            <input type="color" id="seletorCores" value="#000000">
+            <label for="elemento">ELEMENTO:</label>
+            <select id="elemento">
+                <option value="titulo">Título da Página</option>
+                <option value="texto-cabecalho-tabela">Texto Cabeçalho Tabela</option>
+                <option value="itens-tabela">Itens da Tabela</option>
+                <option value="cor-botoes">Botões</option>
+                <option value="botoes-tabela">Botões da Tabela</option>
+                <option value="texto-tabela">Texto Itens Tabela</option>
+                <option value="cabecalho-tabela">Cor do Cabeçalho Tabela</option>
+                <option value="campo-formulario">Cor do Campo Formulario</option>
+                <option value="fundo-pagina">Fundo da Página</option>
+                <option value="fundo-formulario">Fundo do Formulário</option>
+                
+            </select>
+        </section>
+        
+
+
+        <section class="alert"></section>
+        
+
+        <section class="container__tabela">
+
+            <!-- TABELA EM QUE OS ITENS SERÃO INSERIDOS -->
+            <table class="tabela">
+
+                <!-- CABEÇALHO DA TELA -->
+                <thead>
+                    <!-- LINHA DA TABELA -->
+                    <tr>
+                        <!-- CABEÇALHO DESSA LINHA -->
+                        <th> ITEM</th>
+                        <th> AÇÕES </th>
+                        
+                    </tr>
+
+                </thead>
+
+                <!-- CORPO DA TABELA (LINHAS E COLUNAS (tr e td)) -->
+                <tbody>
+                    <!-- CÓDIGO INJETADO POR JavaScript -->
+                </tbody>
+            </table>
+
+        </section>
+
+    </main>
+    
+    <!-- LINK PARA O ARQUIVO JS -->
+    <script src="/src/script/interface.js"></script>
+    <script src="/src/script/interatividade.js"></script>
+</body>
+</html>
